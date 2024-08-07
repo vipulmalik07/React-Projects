@@ -34,6 +34,7 @@
 .sidebar .recent{
     display: flex;
     flex-direction: column;
+    animation: fadein 1.5s;
 }
 
 .sidebar .recent-title{
@@ -63,4 +64,28 @@
 .sidebar .bottom-item{
     padding-left: 10px;
     cursor: pointer;
+}
+
+
+@media (max-width:600px){
+    .sidebar{
+        display: none;
+    }
+}
+
+@media (max-width:600px){
+    .main-bottom input{
+        flex:none;
+        width: 150px;
+    }
+    .main-bottom img{
+        width: 20px;
+
+    }
+    .search-box{
+        padding: 5px 10px;
+    }
+    .search-box div{
+        gap:5px
+    }
 }
